@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <h3>Input Element</h3>
+    <p>An <span style="color: brown;">input element</span> can be displayed in many ways, depending on the typy attribute</p>
+
+    <fieldset style="background-color: rgb(250, 234, 240);">
+        <legend>Text Field</legend>
+        <form action="" method="">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" 
+            placeholder="ป้อนชื่อ" required>
+            <br><br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" 
+            placeholder="ป้อนนามสกุล" >
+            <br><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" 
+            placeholder="ป้อนอีเมล" >
+            <br><br>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age"
+            max="100" min="0" >
+            <br><br>
+
+            <label for="ager">Age Readonly</label>
+            <input type="number" id="ager" name="ager"
+            max="100" min="0" value="8" 
+            readonly><br><br>
+
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="pwd" 
+            placeholder="ป้อนรหัสผ่าน" >
+            <br><br>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" 
+            placeholder="ป้อนวันเกิด" >
+            <br><br>
+
+            <label for="url">Website</label>
+            <input type="url" id="url" name="url" 
+            placeholder="https://www.example.com" >
+            <br><br>
+
+            <label for="aadress">ที่อยู่</label><br>
+            <textarea name="aadress" id="aadress" cols="30" rows="5">
+                
+            </textarea>
+            <br><br>
+
+            <label for="color">สี</label>
+            <input type="color" name="color" id="color">
+            <br><br>
+
+            <input type="submit">
+            <input type="reset">
+
+        </form>
+    </fieldset>
+    
+    <fieldset style="background-color: rgb(250, 234, 240);">
+        <legend>Radio Button</legend>
+        <form action="" method="">
+
+            <label>Gender</label>
+
+            <input type="radio" name="gender" id="male" value="M">
+            <label for="male">ชาย♀</label>
+
+             <input type="radio" name="gender" id="female" value="F">
+            <label for="female">หญิง♂</label>
+            <br><br>
+
+            <input type="submit" value="ยื่นยัน">
+
+        </form>
+    </fieldset>
+
+    <fieldset style="background-color: rgb(250, 234, 240);">
+        <legend>Checkbox</legend>
+        <form action="" method="">
+            <label >วิชาที่ชอบ</label>
+            <input type="checkbox" name="Msupject" id="math" value="math">
+            <label for="math">คณิตศาสตร์</label>
+
+            <input type="checkbox" name="Esupject" id="eng" value="eng">
+            <label for="eng">อังกฤษ</label>
+
+            <input type="checkbox" name="Ssupject" id="sci" value="sci">
+            <label for="sci">วิทยาศาสตร์</label>
+            <br><br>
+
+            <button type="submit">ตกลง</button>
+        </form>
+    </fieldset>
+
+    <fieldset style="background-color: rgb(250, 234, 240);">
+        <legend>DropDown List [Select..Option..</legend>
+        <form action="province">จังหวัด</form>
+        <select name="" id="">
+            <option value="bkk">กรุงเทพมหานคร</option>
+            <option value="nakhon pahtom">นครปฐม</option>
+            <option value="khonkaen">ขอนแก่น</option>
+            <option value="chiangmai">เชียงใหม่</option>
+            <br><br>
+
+            <button type="submit">ตกลง</button>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Uplord File</legend>
+        <form action="photo">รูป</form>
+    </fieldset>
+</body>
+</html>
