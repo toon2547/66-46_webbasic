@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #aa00ff;
+    
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 64px;
+    
+}
+.Menu ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+.logo-name{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo-menu{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.btn-secondary{
+    background-color: #ffffff;
+    color: #371fee;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: solid 1px blue ;
+}
+.btn-primary{
+    background-color: #ffffff;
+    color: #1100ff;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none ;
+    
+}
+
+
+
+footer{
+    background-color: #ff0000;
+
+
+}
+.container{
+    background-color: aqua;
+}

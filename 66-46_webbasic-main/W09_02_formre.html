@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        body{
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(218, 222, 224);
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container{
+            max-width: 600px;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgb(153, 51, 139); 
+            margin: auto;
+        }
+        input,select,textarea{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px salmon;
+            background-color: rgb(248, 248, 248);
+            color: #131313;
+        }
+        button{
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(250, 215, 244);
+            color: #272626;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        h1{
+            text-align: center;
+        }
+        .hover{
+            color: #c4c2c2;
+            
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    
+    <h1 style="color: blueviolet; ">Personnal Information</h1>
+    <br><br>
+<form action="">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" 
+    placeholder="Enter your name">
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" 
+    placeholder="Enter your email">
+
+    <label for="date">Date of Birth</label>
+    <input type="date" name="date" id="date" 
+    placeholder="Enter your date">
+    
+    <label for="gender">Gender</label>
+    <select type="province" name="province">
+    <option value="">--Select Gender--</option>
+    <option value="male">ชาย</option>
+    <option value="female">หญิง</option>
+    </select>
+
+    <label for="hobbie">Hobbie</label>
+    <textarea name="Hobbie" rows="4" id="hobbie" placeholder="List your hobbie"></textarea>
+
+    <label for="country">Country</label>
+    <select name="province" id="province">
+        <option value="">--Select Country--</option>
+        <option value="a">ไทย</option>
+        <option value="b">ลาว</option>
+        <option value="c">จีน</option>
+        <option value="d">เกาหลี</option>
+        <option value="e">ญี่ปุ่น</option>
+    </select>
+    <button type="submit">ตกลง</button>
+
+</form>
+</div>
+</body>
+</html>
