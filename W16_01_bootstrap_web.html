@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootststrap_web</title>
+
+<!-- Latest com -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google forn -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- FOnt Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    
+    .pricing-card {
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    .pricing-card:hover {
+        transform: scale(1.05);
+    }
+
+    .plan-title {
+ font-size: 1.2rem;
+ font-weight: bold;
+    }
+    .plan-price {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .plan-features li {
+        list-style: none;
+        padding: 5px 0;
+        font-size: 1rem;
+        i {
+            margin-right: 10px;
+            font-size: large;
+        }
+    }
+    .plan-features li .check {
+        color: green;
+    }
+    .plan-features li .cross {
+        color: red;
+    }
+
+
+</style>
+</head>
+<body>
+    <!-- Navber -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+            <div class="container ">
+              <div>
+                  <img src="032_images_rabbit/pp.png" alt="" style="width: 30px; "  >
+                              <a class="navbar-brand ms-2"  href="#">PUMAR</a>
+              </div>
+           
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+               
+               
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Members</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                
+                </ul>
+               
+            </div>
+            </div>
+        </nav>
+        
+    <!-- Header section -->
+        <div class="container-fluid  bg-black  text-light py-5 " >
+            <div class="container d-flex justify-content-center align-items-center" style="height: 80vh;"> 
+                
+                <!-- Left side  -->
+                <div class="row w100 vh-100">
+                    <div class="col-md-6 d-flex flex-column justify-content-center align-items-stard">
+                        <h1 style="display: 1;">Better Solutions For Your Business</h1>
+                        <p>We are team of talented designers making websites withBootstrap .</p>
+                        <div>
+                            <button class="btn btn-warning rounded-pill">Get Started</button>
+                            <button class="btn rounded-pill btn-outline-light"> <i class="fa-solid fa-circle-play" > </i> Watch Video</button>
+                        </div>
+                    </div>
+                    <!-- Right side -->
+                    <div class="col-md-6 d-flex justify-content-end align-items-center">
+                        <img src="032_images_rabbit/ccc.jpg" alt="" img-fluid ">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    <!-- Carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"data-bs-interval="2000">
+                        <img src="032_images_rabbit/v1.jpg!sw800" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item"data-bs-interval="2000">
+                        <img src="032_images_rabbit/v2.jpg!sw800" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item"data-bs-interval="2000">
+                        <img src="032_images_rabbit/v3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item"data-bs-interval="2000">
+                        <img src="032_images_rabbit/v4.jpg!sw800" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+       
+
+    <!-- card section -->
+    <div class="container my-5">
+        <h1 style="text-align: center; color: rgb(163, 28, 28);">PRIDING</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est assumenda provident aliquid excepturi voluptas commodi qui esse aspernatur laborum corporis possimus repellendus, mollitia delectus, quam fugit nesciunt expedita! Laudantium, sit.</p>
+
+        <div class="row ">
+
+            <div class="col-md-4">
+                <div class="card pricing-card p-4 mb-2">
+            <h3 class="plan-title ">Free Plan</h3>
+            <p class="plan-price">$0</p>
+            <p class="text-muted">per monht</p>
+            <ul class="plan-features">
+                <li><i class="fa-solid fa-check check "></i>Lorem ipsum dolor sit.</li>
+                <li><i class="fa-solid fa-check check "></i>Lorem, ipsum dolor.</li>
+                <li><i class="fa-solid fa-check check "></i>Lorem ipsum dolor sit amet.</li>
+                <li><i class="fa-solid fa-x cross"></i>Lorem ipsum dolor sit amet.</li>
+                <li><i class="fa-solid fa-x cross"></i>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card pricing-card p-4 mb-2">
+            <h3 class="plan-title">Pro Plan</h3>
+            <p class="plan-price">$0</p>
+            <p class="text-muted">per monht</p>
+            <ul class="plan-features">
+                <li><i class="fa-solid fa-check check "></i>Lorem ipsum dolor sit.</li>
+                <li><i class="fa-solid fa-check check "></i>Lorem, ipsum dolor.</li>
+                <li><i class="fa-solid fa-check check "></i>Lorem ipsum dolor sit amet.</li>
+                <li><i class="fa-solid fa-check check "></i></i>Lorem ipsum dolor sit amet.</li>
+                <li><i class="fa-solid fa-x cross"></i>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card pricing-card p-4 mb-2">
+            <h3 class="plan-title ">Membership Plan</h3>
+            <p class="plan-price">$0</p>
+            <p class="text-muted">per monht</p>
+            <ul class="plan-features">
+                <li><i class="fa-solid fa-check check "></i>Lorem ipsum dolor sit.</li>
+                <li><i class="fa-solid fa-check check "></i>Lorem, ipsum dolor.</li>
+                <li><i class="fa-solid fa-check check "></i>Lorem ipsum dolor sit amet.</li>
+                <li><i class="fa-solid fa-check check "></i>Lorem ipsum dolor sit amet.</li>
+                <li><i class="fa-solid fa-check check "></i>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            </div>
+            </div>
+
+
+            
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="card-footer p-5 mt-0 text-center text-denger text-white bg-dark " >
+        <p>@copyright by Supapak </p>
+        <p>information Technology Program.  Science and Technology Faculty.</p>
+        <p>Nakhon Pathom Rajabhat University</p>
+    </div>
+
+<!-- CDN : Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
